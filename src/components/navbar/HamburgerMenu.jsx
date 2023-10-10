@@ -1,7 +1,7 @@
-import hamburger from "./hamburger.module.css";
+import hamburger from "./navbar.module.css";
 
-const HamburgerMenu = ({ isOpen }) => (
-  <div className={`${hamburger.hamburger} ${isOpen && hamburger.open}`}>
+const HamburgerMenu = ({ isOpen, onClick }) => (
+  <div onClick={onClick} className={`${hamburger.hamburger} ${isOpen && hamburger.open}`}>
     <span className={hamburger.bar}></span>
     <span className={hamburger.bar}></span>
     <span className={hamburger.bar}></span>
