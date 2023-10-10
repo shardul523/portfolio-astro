@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/navbar/intro.jsx";
-import About from "../components/about.astro";
+import Navbar from "../components/navbar/index.jsx";
+import Intro from "../components/intro.astro";
 ---
 
 <Layout title="Shardul Sisodiya">
   <main>
     <Navbar client:only />
-    <About/>
+    <Intro/>
   </main>
 </Layout>
 <style is:global>
