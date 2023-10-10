@@ -1,0 +1,21 @@
+---
+const {class: className} = Astro.props;
+---
+<style>
+    
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+    
+.about-section {
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+
+<section class={className}>
+    <slot/>
+</section>

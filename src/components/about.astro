@@ -1,0 +1,12 @@
+---
+import Section from "./section.astro";
+import { Image } from "astro:assets";
+import MyImage from '../images/self-color.png'
+---
+
+<Section class="about-section">
+    <div>
+        Hey, I am Shardul, <span>a web developer</span>
+    </div>
+    <Image src={MyImage} alt="web developer" />
+</Section>
