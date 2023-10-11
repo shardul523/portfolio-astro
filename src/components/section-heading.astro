@@ -1,0 +1,29 @@
+---
+const {subHeading, mainHeading} = Astro.props;
+---
+
+<div class="section-heading">
+    <div class="section-subheading">
+        {subHeading}
+    </div>
+    <div class="section-mainheading">
+        {mainHeading}
+    </div>
+</div>
+
+<style>
+    .section-heading {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .section-subheading {
+        color: var(--secondary-color-subtle);
+        font-size: larger;
+    }
+    .section-mainheading {
+        font-size: x-large;
+        text-decoration: underline;
+        text-decoration-color: var(--primary-color);
+        text-underline-offset: 0.5rem;
+    }
+</style>

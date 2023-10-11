@@ -1,7 +1,7 @@
 /* General */
 
 .flex {
-  display: flex
+  display: flex;
 }
 
 .flex_column {
@@ -53,46 +53,6 @@
 .gap_2 {
   gap: 2rem;
 }
-/* nav,
-ul {
-  display: flex;
-}
-
-nav {
-  align-items: center;
-  
-}
-
-nav.desktop {
-  justify-content: space-around;
-  height: 15vh;
-}
-
-nav.mobile,
-nav.mobile ul {
-  flex-direction: column;
-}
-
-ul {
-  gap: 2rem;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--tertiary-color);
-  font-size: 1.25rem;
-  transition: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--primary-color);
-  text-underline-offset: 10px;
-} */
 
 /* Hamburger Menu */
 
@@ -128,4 +88,12 @@ a:hover {
   position: absolute;
   transform: rotate(-45deg);
   top: 15px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
