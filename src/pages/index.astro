@@ -1,15 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/navbar/index.jsx";
-import Intro from "../components/intro.astro";
-import About from "../components/about.astro";
+import Intro from "../components/sections/intro.astro";
+import About from "../components/sections/about.astro";
 ---
 
 <Layout title="Shardul Sisodiya">
   <Navbar client:only />
   <main>
-    <Intro/>
-    <About/>
+    <Intro />
+    <About />
   </main>
 </Layout>
 <style is:global>
@@ -35,6 +35,24 @@ import About from "../components/about.astro";
   }
 
   .color-primary {
-    color: var(--primary-color)
+    color: var(--primary-color);
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .justify_space_around {
+    justify-content: space-around;
+  }
+
+  .justify_space_between {
+    justify-content: space-between;
   }
 </style>

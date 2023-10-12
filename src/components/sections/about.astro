@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import Section from "../section.astro";
+import SectionHeading from "../section-heading.astro";
+import SectionContent from "../section-content.astro";
+import WebsiteDev from "../../images/website-development.svg";
+---
+
+<Section>
+  <SectionHeading
+    subHeading="Let me tell you a little"
+    mainHeading="About Myself"
+  />
+  <SectionContent class="flex justify_space_between">
+    <Image src={WebsiteDev} alt="website developer" class="web-pic" />
+    <div>Hello</div>
+  </SectionContent>
+</Section>
+
+<style>
+  .web-pic {
+    width: 50%;
+    height: 50%;
+  }
+</style>
