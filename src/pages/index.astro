@@ -40,7 +40,12 @@ import About from "../components/sections/about.astro";
 
   .flex {
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  @media (width < 750px) {
+    .flex {
+      flex-direction: column;
+    }
   }
 
   .flex-column {
@@ -54,5 +59,9 @@ import About from "../components/sections/about.astro";
 
   .justify_space_between {
     justify-content: space-between;
+  }
+
+  .align-center {
+    align-items: center;
   }
 </style>
