@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/navbar/index.jsx";
 import Intro from "../components/sections/intro.astro";
 import About from "../components/sections/about.astro";
+import Skills from "../components/sections/skills.astro";
 ---
 
 <Layout title="Shardul Sisodiya">
@@ -10,6 +11,7 @@ import About from "../components/sections/about.astro";
   <main>
     <Intro />
     <About />
+    <Skills />
   </main>
 </Layout>
 <style is:global>
@@ -53,6 +55,14 @@ import About from "../components/sections/about.astro";
     flex-direction: column;
   }
 
+  .flex-grow {
+    flex-grow: 1;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .justify_space_around {
     justify-content: space-around;
   }
@@ -61,7 +71,19 @@ import About from "../components/sections/about.astro";
     justify-content: space-between;
   }
 
+  .justify_center {
+    justify-content: center;
+  }
+
   .align-center {
     align-items: center;
+  }
+
+  .gap-5 {
+    gap: 5rem;
+  }
+
+  .py-5 {
+    padding: 5rem 0;
   }
 </style>

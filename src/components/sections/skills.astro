@@ -1,0 +1,46 @@
+---
+import Section from "../section.astro";
+import SectionHeading from "../section-heading.astro";
+import SectionContent from "../section-content.astro";
+---
+
+<Section>
+  <SectionHeading subHeading="Take a look at some of" mainHeading="My Skills" />
+  <SectionContent class="py-5">
+    <div class="flex-column gap-5">
+      <div class="row">
+        <i class="skill devicon-html5-plain"></i>
+        <i class="skill devicon-css3-plain"></i>
+        <i class="skill devicon-php-plain"></i>
+        <i class="skill devicon-tailwindcss-plain"></i>
+      </div>
+      <div class="row">
+        <i class="skill devicon-mongodb-plain-wordmark fa-5x"></i>
+        <i class="skill devicon-express-original"></i>
+        <i class="skill devicon-react-original"></i>
+        <i class="skill devicon-nodejs-plain"></i>
+      </div>
+    </div>
+  </SectionContent>
+</Section>
+
+<style>
+  .skill {
+    color: var(--secondary-color-subtle);
+    font-size: max(100px, 6vw);
+    cursor: pointer;
+    transition: color ease-in-out 0.35s;
+  }
+
+  .skill:hover {
+    color: var(--primary-color);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+    align-items: center;
+  }
+</style>
