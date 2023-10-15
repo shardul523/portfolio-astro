@@ -1,0 +1,24 @@
+---
+import ProjectCard from "../project-card.astro";
+import SectionContent from "../section-content.astro";
+import SectionHeading from "../section-heading.astro";
+import Section from "../section.astro";
+
+
+const projects = [
+    {
+        title: 'ChatRooms',
+        info: 'A chat web app',
+        iname: 'ChatRooms',
+        codeLink: 'https://www.google.co.in',
+        demoLink: 'https://www.google.co.in'
+    }
+]
+---
+
+<Section id="projects">
+    <SectionHeading subHeading="Have a look at some of" mainHeading="My Projects" />
+    <SectionContent>
+        {projects.map(project => <ProjectCard project={project} />)}
+    </SectionContent>
+</Section>

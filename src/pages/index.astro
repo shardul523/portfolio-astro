@@ -4,14 +4,16 @@ import Navbar from "../components/navbar/index.jsx";
 import Intro from "../components/sections/intro.astro";
 import About from "../components/sections/about.astro";
 import Skills from "../components/sections/skills.astro";
+import Projects from "../components/sections/projects.astro";
 ---
 
 <Layout title="Shardul Sisodiya">
-  <Navbar client:only />
+    <Navbar client:only />
   <main>
     <Intro />
     <About />
     <Skills />
+    <Projects />
   </main>
 </Layout>
 <style is:global>
@@ -63,15 +65,15 @@ import Skills from "../components/sections/skills.astro";
     flex-wrap: wrap;
   }
 
-  .justify_space_around {
+  .justify-space-around {
     justify-content: space-around;
   }
 
-  .justify_space_between {
+  .justify-space-between {
     justify-content: space-between;
   }
 
-  .justify_center {
+  .justify-center {
     justify-content: center;
   }
 
