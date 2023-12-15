@@ -12,13 +12,27 @@ const projects = [
         iname: 'ChatRooms',
         codeLink: 'https://www.google.co.in',
         demoLink: 'https://www.google.co.in'
+    }, 
+    {
+        title: 'TV-Wiz',
+        info: 'Find and save info about your favourite shows anytime',
+        iname: 'TVWiz',
+        codeLink: 'https://www.google.co.in',
+        demoLink: 'https://www.google.co.in'
+    },
+    {
+        title: 'Tic-Tac-Toe',
+        info: 'Play the classic game with your friends anytime anywhere',
+        iname: 'TICTACTOE',
+        codeLink: 'https://www.google.co.in',
+        demoLink: 'https://www.google.co.in'
     }
 ]
 ---
 
 <Section id="projects">
     <SectionHeading subHeading="Have a look at some of" mainHeading="My Projects" />
-    <SectionContent>
+    <SectionContent class:list={'flex mt-5 justify-space-around flex-wrap align-center gap-5'}>
         {projects.map(project => <ProjectCard project={project} />)}
     </SectionContent>
 </Section>
