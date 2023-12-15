@@ -5,16 +5,19 @@ import Intro from "../components/sections/intro.astro";
 import About from "../components/sections/about.astro";
 import Skills from "../components/sections/skills.astro";
 import Projects from "../components/sections/projects.astro";
+import Contact from "../components/sections/contact.astro";
 ---
 
 <Layout title="Shardul Sisodiya">
-    <Navbar client:only />
+  <Navbar client:only />
   <main>
     <Intro />
     <About />
     <Skills />
     <Projects />
+    <Contact />
   </main>
+  <footer class="footer">Made by Shardul Sisodiya &copy;2023</footer>
 </Layout>
 <style is:global>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
@@ -24,6 +27,8 @@ import Projects from "../components/sections/projects.astro";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 15vh;
     transition: all ease 1s;
   }
 
@@ -100,5 +105,15 @@ import Projects from "../components/sections/projects.astro";
 
   .mt-5 {
     margin: 5rem 0 0 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    height: 150px;
   }
 </style>

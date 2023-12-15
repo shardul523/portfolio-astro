@@ -1,0 +1,51 @@
+---
+import Section from "../section.astro";
+import SectionHeading from "../section-heading.astro";
+import SectionContent from "../section-content.astro";
+---
+
+<Section id="contact">
+  <SectionHeading
+    subHeading="Here is how you can"
+    mainHeading="Connect with Me"
+  />
+  <SectionContent class:list={"flex justify-space-around align-center mt-5"}>
+    <a target="_blank" class="link" href="https://twitter.com/ShardulSisodiy2"
+      ><i class="contact devicon-twitter-original"></i>Twitter</a
+    >
+    <a
+      target="_blank"
+      class="link"
+      href="https://www.linkedin.com/in/shardul-sisodiya-2671a2222"
+      ><i class="contact devicon-linkedin-plain"></i>LinkedIn</a
+    >
+    <a target="_blank" class="link" href="mailto:sisodiyashardul523@gmail.com"
+      ><i class="contact fa-solid fa-envelope"></i>Mail</a
+    >
+    <a target="_blank" class="link" href="https://github.com/shardul523"
+      ><i class="contact devicon-github-original"></i>Github</a
+    >
+  </SectionContent>
+</Section>
+
+<style>
+  .contact {
+    font-size: max(80px, 5vw);
+    transition: none;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+    color: var(--secondary-color-subtle);
+    cursor: pointer;
+    transition: none;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+</style>

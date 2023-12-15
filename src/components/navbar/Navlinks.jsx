@@ -14,10 +14,10 @@ const Navlinks = ({ isMobile }) => (
       navbar.gap_2
     } ${navbar.align_center}`}
   >
-    <Navlink href={"#"}>About</Navlink>
-    <Navlink href={"#"}>Skills</Navlink>
-    <Navlink href={"#"}>Projects</Navlink>
-    <Navlink href={"#"}>Contact</Navlink>
+    <Navlink href={"#about"}>About</Navlink>
+    <Navlink href={"#skills"}>Skills</Navlink>
+    <Navlink href={"#projects"}>Projects</Navlink>
+    <Navlink href={"#contact"}>Contact</Navlink>
   </ul>
 );
 
