@@ -1,5 +1,5 @@
 ---
-const { class: className, id = '#' } = Astro.props;
+const { class: className, id = "#" } = Astro.props;
 ---
 
 <style>
@@ -20,6 +20,6 @@ const { class: className, id = '#' } = Astro.props;
   }
 </style>
 
-<section id={id} class={className}>
+<section id={id} class={`${className}`}>
   <slot />
 </section>
