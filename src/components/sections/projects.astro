@@ -4,35 +4,46 @@ import SectionContent from "../section-content.astro";
 import SectionHeading from "../section-heading.astro";
 import Section from "../section.astro";
 
-
 const projects = [
-    {
-        title: 'ChatRooms',
-        info: 'A chat web app',
-        iname: 'ChatRooms',
-        codeLink: 'https://github.com/shardul523/chatrooms-web',
-        demoLink: 'https://chatrooms-web.web.app'
-    }, 
-    {
-        title: 'TV-Wiz',
-        info: 'Find and save info about your favourite shows anytime',
-        iname: 'TVWiz',
-        codeLink: 'https://github.com/shardul523/TV-Wiz',
-        demoLink: 'https://shardul523.github.io/TV-Wiz/'
-    },
-    {
-        title: 'Tic-Tac-Toe',
-        info: 'Play the classic game with your friends anytime anywhere',
-        iname: 'TICTACTOE',
-        codeLink: 'https://github.com/shardul523/Tic-Tac-Toe',
-        demoLink: 'https://tictactoeweb.surge.sh/'
-    }
-]
+  {
+    title: "ProShop",
+    info: "A single vendor e-commerce app",
+    iname: "ProShop",
+    codeLink: "https://github.com/shardul523/proshop",
+    demoLink: "https://proshop-ql6y.onrender.com/",
+  },
+  {
+    title: "ChatRooms",
+    info: "A chat web app",
+    iname: "ChatRooms",
+    codeLink: "https://github.com/shardul523/chatrooms-web",
+    demoLink: "https://chatrooms-web.web.app",
+  },
+  {
+    title: "TV-Wiz",
+    info: "Find and save info about your favourite shows anytime",
+    iname: "TVWiz",
+    codeLink: "https://github.com/shardul523/TV-Wiz",
+    demoLink: "https://shardul523.github.io/TV-Wiz/",
+  },
+  // {
+  //     title: 'Tic-Tac-Toe',
+  //     info: 'Play the classic game with your friends anytime anywhere',
+  //     iname: 'TICTACTOE',
+  //     codeLink: 'https://github.com/shardul523/Tic-Tac-Toe',
+  //     demoLink: 'https://tictactoeweb.surge.sh/'
+  // }
+];
 ---
 
 <Section id="projects">
-    <SectionHeading subHeading="Have a look at some of" mainHeading="My Projects" />
-    <SectionContent class:list={'flex mt-5 justify-space-around flex-wrap align-center gap-5'}>
-        {projects.map(project => <ProjectCard project={project} />)}
-    </SectionContent>
+  <SectionHeading
+    subHeading="Have a look at some of"
+    mainHeading="My Projects"
+  />
+  <SectionContent
+    class:list={"flex mt-5 justify-space-around flex-wrap align-center gap-5"}
+  >
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </SectionContent>
 </Section>

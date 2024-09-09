@@ -1,13 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import ChatRooms from "../images/ChatRooms.PNG";
+import ChatRooms from "../images/ChatRooms.png";
 import TVWiz from "../images/Tv-Wiz.jpg";
-import TICTACTOE from "../images/TIC-TAC-TOE.jpg";
+import ProShop from "../images/Proshop.png";
+// import TICTACTOE from "../images/TIC-TAC-TOE.jpg";
 
 const ImageMap = new Map([
+  ["ProShop", ProShop],
   ["ChatRooms", ChatRooms],
   ["TVWiz", TVWiz],
-  ["TICTACTOE", TICTACTOE],
+  // ["TICTACTOE", TICTACTOE],
 ]);
 
 const { project } = Astro.props;
